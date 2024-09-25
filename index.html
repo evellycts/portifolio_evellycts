@@ -178,13 +178,16 @@
         <section class="formulario" id="formulario">
             <div class="interface">
                 <h2 class="titulo">FALA <SPAN>COMIGO.</SPAN></h2>
-              <form name="contact" method="POST" netlify>
-                <input type="text" name="" id="" placeholder="Seu Nome" required>
-                <input type="text" name="" id="" placeholder="Seu E-mail" required>
-                <input type="text" name="" id="" placeholder="Seu Celular">
-                <textarea name="" id="" placeholder="Sua Mensagem" required></textarea>
-                <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
-              </form>
+            <form name="contact" method="POST" data-netlify="true">
+               <input type="text" name="nome" id="nome" placeholder="Seu Nome" required>
+               <input type="email" name="email" id="email" placeholder="Seu E-mail" required>
+               <input type="text" name="celular" id="celular" placeholder="Seu Celular">
+            <textarea name="mensagem" id="mensagem" placeholder="Sua Mensagem" required></textarea>
+                    <div class="btn-enviar">
+               <input type="submit" value="ENVIAR">
+                   </div>
+            </form>
+
 
             </div><!--interface-->
         </section><!--formulario-->
